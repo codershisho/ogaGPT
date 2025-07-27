@@ -1,0 +1,34 @@
+[
+    {
+      "title": "VPN接続トラブル対応",
+      "content": "VPNに接続できないときの対応手順です。",
+      "queries": [
+        "vpnがつながらない",
+        "vpn 接続失敗",
+        "vpn パスワードわからない",
+        "vpn 接続できない"
+      ],
+      "url": "/manuals/vpn-trouble.pdf"
+    },
+    {
+      "title": "メール送受信の不具合",
+      "content": "メールが送れない、受信できないときの対処法。",
+      "queries": [
+        "メールが届かない",
+        "送信エラー",
+        "受信できません"
+      ],
+      "url": "/manuals/mail-trouble.pdf"
+    },
+    {
+      "title": "パスワードの再発行方法",
+      "content": "パスワードを忘れた際のリセット方法。",
+      "queries": [
+        "パスワードが分からない",
+        "ログインできない",
+        "再発行したい"
+      ],
+      "url": "/manuals/password-reset.pdf"
+    }
+  ]
+  

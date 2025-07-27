@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  web:
+    build:
+      context: ./  # Dockerfileのあるディレクトリを指定
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ./backend:/workspace/backend
+      - ./frontend:/workspace/frontend
+    ports:
+      - "8000:8000"  # FastAPI
+      - "3000:3000"  # Nuxt 3
+    tty: true
+    command: sleep infinity  # コンテナ起動時に止まらないようにする
+
+  db:
+    image: mariadb:11
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: oga-gpt
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
