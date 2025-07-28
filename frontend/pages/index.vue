@@ -20,14 +20,14 @@
       </div>
   
       <form
-        @submit.prevent="send"
         class="mt-4 flex items-center gap-2"
+        @submit.prevent="send"
       >
         <input
           v-model="input"
           class="flex-1 border rounded-xl p-2"
           placeholder="メッセージを入力"
-        />
+        >
         <button
           type="submit"
           class="bg-blue-600 text-white rounded-xl px-4 py-2 hover:bg-blue-700"
